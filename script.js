@@ -3029,7 +3029,7 @@ const buttonEl = document.querySelector("button");
 
 function getRandomGalaxy() {
   const g = rand(galaxies);
-  if (g.velocity.includes("Missing")) {
+  if (g.velocity.includes("Missing") || g.distance.includes("Missing")) {
     getRandomGalaxy();
   } else {
     galaxyEl.innerHTML = `
