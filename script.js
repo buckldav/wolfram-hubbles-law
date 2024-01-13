@@ -3035,13 +3035,13 @@ function getRandomGalaxy() {
     galaxyEl.innerHTML = `
       <h1>${g.name}</h1>
       <table> 
-        <tr>
-          <th>Velocity (y axis)</th>
-          <td>${formatVelocity(g.velocity, false)}</td>
-        </tr>
         <tr> 
           <th>Distance (x axis)</th>
           <td>${g.distance}</td>
+        </tr>
+        <tr>
+          <th>Velocity (y axis)</th>
+          <td>${formatVelocity(g.velocity, false)}</td>
         </tr>
       </table> 
       <img src="${g.image}" alt="galaxy image">
